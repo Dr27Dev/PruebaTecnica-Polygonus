@@ -15,8 +15,8 @@ public class PickupSpawner : MonoBehaviour
     
     [SerializeField] private Vector2 spawnTimeRange = new Vector2(3,6);
     private float currentSpawnTime, spawnTimer;
-
-    public bool IsPickupActive;
+    
+    public int ActivePickups;
 
     private void Awake()
     {
@@ -25,7 +25,7 @@ public class PickupSpawner : MonoBehaviour
 
     private void Start()
     {
-        for (int i = 0; i < 20; i++)
+        for (int i = 0; i < 5; i++)
         {
             GameObject pickup = Instantiate(pickupPrefab, transform);
             pickup.SetActive(false); pickupPool.Add(pickup);
@@ -37,13 +37,14 @@ public class PickupSpawner : MonoBehaviour
 
     private void Update()
     {
-        if (!IsPickupActive)
+        if (ActivePickups <= 5)
         {
             if (spawnTimer >= currentSpawnTime)
             {
                 SpawnPickup(pickupPool, pickupPrefab);
                 currentSpawnTime = Random.Range(spawnTimeRange.x, spawnTimeRange.y);
                 spawnTimer = 0;
+                ActivePickups++;
             }
             spawnTimer += Time.deltaTime;
         }
@@ -66,7 +67,5 @@ public class PickupSpawner : MonoBehaviour
         }
         pickup.SetActive(true);
         pickup.transform.position = GetRandomSpawnPoint();
-        IsPickupActive = true;
     }
-    
 }

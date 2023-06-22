@@ -6,6 +6,10 @@ TagManager:
   tags:
   - Enemy A
   - Enemy B
+  - DeactivationZone
+  - EnemyBullet
+  - PlayerBullet
+  - ScreenBounds
   layers:
   - Default
   - TransparentFX
@@ -18,7 +22,7 @@ TagManager:
   - Bullet Enemy
   - Enemy
   - Player
-  - 
+  - ScreenBounds
   - 
   - 
   - 

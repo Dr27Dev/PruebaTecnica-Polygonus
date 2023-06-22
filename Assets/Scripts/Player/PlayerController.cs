@@ -6,6 +6,8 @@ using UnityEngine.InputSystem;
 
 public class PlayerController : MonoBehaviour
 {
+    public static PlayerController Instance;
+    
     public Action<Vector2> OnMove;
     public Action<bool> OnFire_A, OnFire_B;
     public Action OnPause, OnReset;
@@ -15,6 +17,7 @@ public class PlayerController : MonoBehaviour
 
     private void Awake()
     {
+        Instance = this;
         inputManager = new InputManager();
         EnableInputs();
         isFiring_A = false;

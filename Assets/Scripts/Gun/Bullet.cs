@@ -37,15 +37,28 @@ public class Bullet : MonoBehaviour
         {
             default:
             case BulletType.A:
-                if (col.transform.CompareTag("Enemy B")) gameObject.SetActive(false);
-                if (col.transform.CompareTag("Enemy A")) gameObject.SetActive(false);
+                if (col.transform.CompareTag("Enemy A"))
+                {
+                    gameObject.SetActive(false);
+                    Score.Instance.AddScore(8);
+                    col.transform.GetComponent<Enemy>().Deactivate();
+                }
+                if (col.transform.CompareTag("Enemy B") || col.transform.CompareTag("ScreenBounds"))
+                    gameObject.SetActive(false);
                 break;
             case BulletType.B:
-                if (col.transform.CompareTag("Enemy B")) gameObject.SetActive(false);
-                if (col.transform.CompareTag("Enemy A")) gameObject.SetActive(false);
+                if (col.transform.CompareTag("Enemy B"))
+                {
+                    gameObject.SetActive(false);
+                    Score.Instance.AddScore(8);
+                    col.transform.GetComponent<Enemy>().Deactivate();
+                }
+                if (col.transform.CompareTag("Enemy A") || col.transform.CompareTag("ScreenBounds"))
+                    gameObject.SetActive(false);
                 break;
             case BulletType.Enemy:
                 if (col.transform.CompareTag("Player")) gameObject.SetActive(false);
+                if (col.transform.CompareTag("PlayerBullet")) gameObject.SetActive(false);
                 break;
         }
     }

@@ -12,7 +12,7 @@ public class Pickup : MonoBehaviour
         if (col.transform.CompareTag("Player"))
         {
             Score.Instance.AddScore(pointsGiven);
-            PickupSpawner.Instance.IsPickupActive = false;
+            PickupSpawner.Instance.ActivePickups -= 1;
             gameObject.SetActive(false);
         }
     }

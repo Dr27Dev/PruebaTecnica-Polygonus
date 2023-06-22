@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4131107463267463920}
   - component: {fileID: 4131107463267463927}
-  m_Layer: 6
+  m_Layer: 7
   m_Name: Sprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -96,9 +96,9 @@ GameObject:
   - component: {fileID: 4131107464046326737}
   - component: {fileID: 4131107464046326738}
   - component: {fileID: 4131107464046326739}
-  m_Layer: 6
+  m_Layer: 7
   m_Name: Bullet B
-  m_TagString: Untagged
+  m_TagString: PlayerBullet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -170,3 +170,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   type: 1
   speed: 1200
+  deactivateTime: 2
