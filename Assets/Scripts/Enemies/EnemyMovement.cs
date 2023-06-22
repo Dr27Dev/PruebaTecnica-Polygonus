@@ -9,7 +9,7 @@ public enum MovementPattern { Circle, ToPlayer }
 public class EnemyMovement : MonoBehaviour
 {
     private Rigidbody2D rb;
-    
+
     [Header("Circle Movement")]
     [SerializeField] private MovementPattern movementPattern;
     [SerializeField] private float circleRadius = 3f;

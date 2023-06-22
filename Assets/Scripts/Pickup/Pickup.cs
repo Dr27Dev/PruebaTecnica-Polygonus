@@ -13,6 +13,7 @@ public class Pickup : MonoBehaviour
         {
             Score.Instance.AddScore(pointsGiven);
             PickupSpawner.Instance.ActivePickups -= 1;
+            AudioManager.Instance.PlayClip(AudioManager.Instance.Pickup);
             gameObject.SetActive(false);
         }
     }

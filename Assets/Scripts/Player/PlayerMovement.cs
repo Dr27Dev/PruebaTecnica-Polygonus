@@ -8,6 +8,7 @@ public class PlayerMovement : MonoBehaviour
 {
     private Rigidbody2D rb;
     private PlayerController playerController;
+    [SerializeField] private Animator animator;
     
     [SerializeField] private float speed = 5f;
 
@@ -17,5 +18,10 @@ public class PlayerMovement : MonoBehaviour
         playerController = GetComponent<PlayerController>();
         playerController.OnMove += Move;
     }
-    private void Move(Vector2 movement) { rb.velocity = movement * speed * Time.deltaTime; }
+
+    private void Move(Vector2 movement)
+    {
+        rb.velocity = movement * speed * Time.deltaTime;
+        animator.SetInteger("HorizontalVel", (int) movement.x);
+    }
 }

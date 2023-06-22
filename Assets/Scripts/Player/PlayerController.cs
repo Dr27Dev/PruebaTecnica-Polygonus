@@ -54,4 +54,9 @@ public class PlayerController : MonoBehaviour
         inputManager.Player.Pause.performed += TriggerPause;
         inputManager.Player.Reset.performed += TriggerReset;
     }
+
+    private void OnDisable()
+    {
+        inputManager.Player.Disable();
+    }
 }

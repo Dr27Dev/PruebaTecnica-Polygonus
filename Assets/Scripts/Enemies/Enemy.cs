@@ -9,6 +9,7 @@ using UnityEngine;
 public class Enemy : MonoBehaviour
 {
     private EnemyMovement enemyMovement;
+    [SerializeField] private GameObject deathFXprefab;
 
     void Awake()
     {
@@ -17,7 +18,10 @@ public class Enemy : MonoBehaviour
 
     public void Deactivate()
     {
-        
+        var deathFX = Instantiate(deathFXprefab);
+        deathFX.transform.position = transform.position;
+        Destroy(deathFX, 1f);
+        AudioManager.Instance.PlayClip(AudioManager.Instance.EnemyExplosion);
         gameObject.SetActive(false);
     }
 
