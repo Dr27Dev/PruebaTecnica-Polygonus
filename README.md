@@ -40,6 +40,7 @@ Además también se utilizó un Singleton en diferentes scripts.
 
 Para el apartado gráfico, hay shaders y efectos visuales notorios:
 - Pixelización de la pantalla: En realidad es una render feature que se encarga de dar un efecto de pixelado, simplificando diferentes puntos de la pantalla y amplificándolos a placer. Todo lo que hay al fondo son simplemente shaders y modelos 3D.
+
  ![image](https://github.com/Dr27Dev/PruebaTecnica-Polygonus/assets/108661855/dfdfdddb-375a-4fa2-a2d1-d20a6ce63dfc)
  ![image](https://github.com/Dr27Dev/PruebaTecnica-Polygonus/assets/108661855/be903ce9-801f-414d-b1c7-f9bb821410fd)
 
