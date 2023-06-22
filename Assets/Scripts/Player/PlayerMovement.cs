@@ -21,7 +21,7 @@ public class PlayerMovement : MonoBehaviour
 
     private void Move(Vector2 movement)
     {
-        rb.velocity = movement * speed * Time.deltaTime;
+        rb.velocity = movement * speed * Time.fixedDeltaTime;
         animator.SetInteger("HorizontalVel", (int) movement.x);
     }
 }

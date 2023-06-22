@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.PlayerLoop;
 
 public enum BulletType { A, B, Enemy }
 [RequireComponent(typeof(Rigidbody2D))]
@@ -22,13 +23,17 @@ public class Bullet : MonoBehaviour
 
     private void Update()
     {
-        rb.velocity = new Vector2(0,speed * Time.deltaTime);
         if (gameObject.activeSelf)
         {
             deactivateTimer += Time.deltaTime;
             if (deactivateTimer >= deactivateTime) { deactivateTimer = 0; gameObject.SetActive(false); }
         }
         else deactivateTimer = 0;
+    }
+
+    private void FixedUpdate()
+    {
+        rb.velocity = new Vector2(0,speed * Time.fixedDeltaTime);
     }
 
     private void OnCollisionEnter2D(Collision2D col)
