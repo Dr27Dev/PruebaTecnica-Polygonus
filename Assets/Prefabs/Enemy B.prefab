@@ -102,6 +102,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c928d0108e9992c42ba829a2d59b2ea0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  deathFXprefab: {fileID: 5707948350958847950, guid: 14a654033e26f584aa484792b6a9530d, type: 3}
 --- !u!114 &6346237230291659438
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -224,7 +225,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: -5177388603050735206, guid: 8884154dfe85442a3a3578be807dbcdf, type: 3}
-  m_Color: {r: 1, g: 0.6745283, b: 0.6745283, a: 1}
+  m_Color: {r: 1, g: 0.28773582, b: 0.28773582, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 2

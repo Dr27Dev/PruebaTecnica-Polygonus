@@ -7,7 +7,7 @@ using UnityEngine.SceneManagement;
 public class GameOver : MonoBehaviour
 {
     [SerializeField] private GameObject gameOverScreen;
-    private bool isGameOver;
+    [SerializeField] private bool isGameOver;
 
     private void Start()
     {
@@ -30,6 +30,7 @@ public class GameOver : MonoBehaviour
         {
             Time.timeScale = 1;
             SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+            isGameOver = false;
         }
     }
 
