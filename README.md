@@ -1,8 +1,9 @@
 # **PruebaTecnica-Polygonus**
 > Simón Osorio Uribe
 
+Build: https://drive.google.com/file/d/1u8PdhumMdnBmmMEHuro4UdZhqLf6niBX/view?usp=sharing
+
 Desarrollé un minijuego en vista Top-Down, con temática arcade shooter.
-![image](https://github.com/Dr27Dev/PruebaTecnica-Polygonus/assets/108661855/85065cea-a489-40e1-ad78-c5d345adbdfb)
 
 ----
 ## *Jugador*
@@ -45,3 +46,6 @@ Para el apartado gráfico, hay shaders y efectos visuales notorios:
 
 - Agua: Combinación de movimiento de UV's con texturas simulando cáusticas.
 - Postprocessing: Bloom, Vignette, Chromatic Aberration, Lens Distortion
+
+## *Captura del Proyecto In-Game*
+![image](https://github.com/Dr27Dev/PruebaTecnica-Polygonus/assets/108661855/85065cea-a489-40e1-ad78-c5d345adbdfb)
