@@ -424,7 +424,7 @@ AudioSource:
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -1506,6 +1506,7 @@ MonoBehaviour:
   Pause: {fileID: 8300000, guid: b0b2af30d347c514197122197120efc3, type: 3}
   Resume: {fileID: 8300000, guid: 1d2280e80efa317418c57ca2c4943f94, type: 3}
   Pickup: {fileID: 8300000, guid: 509af55b27a7cb046bcc08b9d2dfba28, type: 3}
+  Shoot: {fileID: 0}
 --- !u!4 &961729434
 Transform:
   m_ObjectHideFlags: 0

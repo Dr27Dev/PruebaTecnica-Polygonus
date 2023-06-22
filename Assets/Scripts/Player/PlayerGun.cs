@@ -52,6 +52,7 @@ public class PlayerGun : MonoBehaviour
 
     private void SpawnBullet(List<GameObject> bulletPool, GameObject bulletPrefab)
     {
+        AudioManager.Instance.PlayClip(AudioManager.Instance.Shoot);
         fireTimer = 0f;
         GameObject bullet = bulletPool.Find(b => !b.activeSelf);
         if (bullet == null)

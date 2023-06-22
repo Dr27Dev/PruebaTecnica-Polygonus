@@ -16,6 +16,7 @@ public class EnemyGun : MonoBehaviour
         if (fireTimer >= 1f / fireRate)
         {
             EnemyBulletManager.Instance.EnemyBulletPool(bulletSpawnPosition);
+            AudioManager.Instance.PlayShootClip2();
             fireRate = Random.Range(fireRateRange.x, fireRateRange.y);
             fireTimer = 0;
         }

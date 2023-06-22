@@ -23,6 +23,8 @@ public class GameOver : MonoBehaviour
         Time.timeScale = 0;
         isGameOver = true;
         gameOverScreen.SetActive(true);
+        Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
     }
 
     public void RestartLevel()
