@@ -6,6 +6,7 @@ Build: https://drive.google.com/file/d/1u8PdhumMdnBmmMEHuro4UdZhqLf6niBX/view?us
 Desarrollé un minijuego en vista Top-Down, con temática arcade shooter.
 
 >**Disclaimer 1:** Hay un error en la resolución del juego al abrirlo por primera vez. Al iniciar el juego, es recomendable quitar la pantalla completa, escalar la ventana/maximizarla y volver a activar la pantalla completa para poder ver el juego como se espera. Para referencia de cómo debería ser, al final de este documento hay una captura del juego con las visuales.
+
 >**Disclaimer 2:** Se me olvidó utilizar el FixedDeltaTime en vez de deltaTime y en algunos pc's la velocidad varía. Me vine a dar cuenta después de testearlo en otro PC. Lo interesante es que varía incluso entre PC's de prestaciones muy similares.
 
 ----
