@@ -2,8 +2,7 @@
 > Simón Osorio Uribe
 
 Desarrollé un minijuego en vista Top-Down, con temática arcade shooter.
-![image](https://github.com/Dr27Dev/PruebaTecnica-Polygonus/assets/108661855/798685db-1e36-41c3-97bd-1a092a95b868)
-
+![image](https://github.com/Dr27Dev/PruebaTecnica-Polygonus/assets/108661855/85065cea-a489-40e1-ad78-c5d345adbdfb)
 
 ----
 ## *Jugador*
@@ -15,9 +14,8 @@ Con tan solo recibir un solo golpe, el jugador perderá y se reiniciará el jueg
 
 ## *Enemigos*
 
-![image](https://github.com/Dr27Dev/PruebaTecnica-Polygonus/assets/108661855/70857f65-f458-4c13-8aae-38ecc6c10c25)
-![image](https://github.com/Dr27Dev/PruebaTecnica-Polygonus/assets/108661855/ff71ce22-e009-49e5-ab53-9da03a814879)
-
+![image](https://github.com/Dr27Dev/PruebaTecnica-Polygonus/assets/108661855/1e084ebb-ef7e-49a7-8a12-907acc7478d9)
+![image](https://github.com/Dr27Dev/PruebaTecnica-Polygonus/assets/108661855/d647948f-d8ae-492b-9837-a7189d25b269)
 
 Hay dos tipos de enemigos, uno `verde` y uno `rojo`, al igual que los proyectiles del jugador. Cada enemigo solo es afectado por los proyectiles de su color.
 Adicionalmente, hay dos tipos de movimiento, que se seleccionan aleatoriamente:
@@ -41,8 +39,9 @@ Además también se utilizó un Singleton en diferentes scripts.
 Para el apartado gráfico, hay shaders y efectos visuales notorios:
 - Pixelización de la pantalla: En realidad es una render feature que se encarga de dar un efecto de pixelado, simplificando diferentes puntos de la pantalla y amplificándolos a placer. Todo lo que hay al fondo son simplemente shaders y modelos 3D.
 
- ![image](https://github.com/Dr27Dev/PruebaTecnica-Polygonus/assets/108661855/dfdfdddb-375a-4fa2-a2d1-d20a6ce63dfc)
- ![image](https://github.com/Dr27Dev/PruebaTecnica-Polygonus/assets/108661855/be903ce9-801f-414d-b1c7-f9bb821410fd)
+ ![image](https://github.com/Dr27Dev/PruebaTecnica-Polygonus/assets/108661855/0512bbf5-069f-41b9-9077-3cfc3bc64fa9)
+ ![image](https://github.com/Dr27Dev/PruebaTecnica-Polygonus/assets/108661855/31ccf924-59d5-4f81-8c40-3caf7209c921)
+
 
 - Agua: Combinación de movimiento de UV's con texturas simulando cáusticas.
 - Postprocessing: Bloom, Vignette, Chromatic Aberration, Lens Distortion
