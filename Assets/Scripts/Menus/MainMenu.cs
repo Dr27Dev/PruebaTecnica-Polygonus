@@ -13,6 +13,8 @@ public class MainMenu : MonoBehaviour
     {
         settingsMenu.SetActive(false);
         creditsMenu.SetActive(false);
+        Application.targetFrameRate = 60;
+        QualitySettings.vSyncCount = 0;
     }
 
     public void Play()

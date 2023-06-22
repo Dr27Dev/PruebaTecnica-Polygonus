@@ -29,8 +29,20 @@ public class SettingsMenu : MonoBehaviour
         {
             var fullscreenValue = PlayerPrefs.GetInt("Fullscreen", 1); // 0 is false, 1 is true
             if (fullscreenValue == 1) {fullscreenToggle.isOn = true; Fullscreen(true);}
-            else {fullscreenToggle.isOn = false; Fullscreen(true);}
+            else {fullscreenToggle.isOn = false; Fullscreen(false);}
         }
+        else
+        {
+            Fullscreen(true);
+        }
+    }
+
+    private void Update()
+    {
+        float aspect = 1.333333f;
+        print(Camera.main.aspect);
+        if (Camera.main.aspect < (aspect-0.1f) || Camera.main.aspect > (aspect+0.1f))
+            Screen.SetResolution(1024,768, Screen.fullScreen);
     }
 
     private void Start()
@@ -38,6 +50,8 @@ public class SettingsMenu : MonoBehaviour
         mixer.SetFloat("MasterVol", Mathf.Log10(Master.value) * 20);
         mixer.SetFloat("MusicVol", Mathf.Log10(Music.value) * 20);
         mixer.SetFloat("SFXVol", Mathf.Log10(SFX.value) * 20);
+        Application.targetFrameRate = 60;
+        QualitySettings.vSyncCount = 0;
     }
 
     public void Fullscreen(bool value)

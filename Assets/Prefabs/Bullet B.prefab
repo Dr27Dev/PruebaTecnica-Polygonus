@@ -85,7 +85,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   type: 1
-  speed: 1200
+  speed: 900
   deactivateTime: 2
 --- !u!1 &4550008742410202075
 GameObject:

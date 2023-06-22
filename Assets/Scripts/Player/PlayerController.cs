@@ -24,8 +24,8 @@ public class PlayerController : MonoBehaviour
         isFiring_B = false;
     }
 
-    private void Update() { HandleMove(); HandleFire(); }
-    
+    private void FixedUpdate() { HandleMove(); HandleFire(); }
+
     private void HandleMove() { if (OnMove != null) OnMove(inputManager.Player.Move.ReadValue<Vector2>()); }
 
     private void HandleFire()

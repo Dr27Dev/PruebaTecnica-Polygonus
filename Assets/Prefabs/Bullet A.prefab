@@ -281,5 +281,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   type: 0
-  speed: 1200
+  speed: 900
   deactivateTime: 2
