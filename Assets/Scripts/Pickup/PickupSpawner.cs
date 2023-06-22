@@ -44,6 +44,7 @@ public class PickupSpawner : MonoBehaviour
                 SpawnPickup(pickupPool, pickupPrefab);
                 currentSpawnTime = Random.Range(spawnTimeRange.x, spawnTimeRange.y);
                 spawnTimer = 0;
+                ActivePickups++;
             }
             spawnTimer += Time.deltaTime;
         }
@@ -67,5 +68,4 @@ public class PickupSpawner : MonoBehaviour
         pickup.SetActive(true);
         pickup.transform.position = GetRandomSpawnPoint();
     }
-    
 }

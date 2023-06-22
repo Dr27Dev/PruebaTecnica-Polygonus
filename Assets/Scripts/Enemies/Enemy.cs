@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 [RequireComponent(typeof(EnemyMovement))]
@@ -14,8 +15,19 @@ public class Enemy : MonoBehaviour
         enemyMovement = GetComponent<EnemyMovement>();
     }
 
-    public void ResetValues(Vector3 newPosition)
+    public void Deactivate()
     {
-        enemyMovement.ResetValues(newPosition);
+        
+        gameObject.SetActive(false);
+    }
+
+    public void ResetValues(Vector3 newPosition, MovementPattern pattern)
+    {
+        enemyMovement.ResetValues(newPosition, pattern);
+    }
+
+    private void OnTriggerEnter2D(Collider2D col)
+    {
+        if (col.CompareTag("DeactivationZone")) Deactivate();
     }
 }

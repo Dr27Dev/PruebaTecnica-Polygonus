@@ -69,11 +69,12 @@ public class EnemyMovement : MonoBehaviour
         if (Vector3.Distance(transform.position, targetPosition) <= 0.5f) triggerTargetPosition = true;
     }
     
-    public void ResetValues(Vector3 newPosition)
+    public void ResetValues(Vector3 newPosition, MovementPattern pattern)
     {
         startPosition = newPosition;
         transform.position = newPosition;
         startTime = Time.time;
         triggerTargetPosition = true;
+        movementPattern = pattern;
     }
 }
