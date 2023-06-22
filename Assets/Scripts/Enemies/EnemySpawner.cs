@@ -41,6 +41,15 @@ public class EnemySpawner : MonoBehaviour
     private void SpawnHandler()
     {
         int enemyAmount = Random.Range(1, 5);
+        if (Score.Instance.CurrentScore >= 100) enemyAmount = Random.Range(2, 5);
+        if (Score.Instance.CurrentScore >= 200) enemyAmount = Random.Range(3, 5);
+        if (Score.Instance.CurrentScore >= 300) enemyAmount = Random.Range(4, 6);
+        if (Score.Instance.CurrentScore >= 400) enemyAmount = Random.Range(5, 7);
+        if (Score.Instance.CurrentScore >= 500) enemyAmount = Random.Range(5, 8);
+        if (Score.Instance.CurrentScore >= 600) enemyAmount = Random.Range(5, 9);
+        if (Score.Instance.CurrentScore >= 700) enemyAmount = Random.Range(5, 10);
+        
+        
         MovementPattern movementPattern = (MovementPattern)Random.Range(0, 2);
         StartCoroutine(SpawnHorde(enemyAmount, movementPattern));
     }

@@ -11,7 +11,7 @@ public class Score : MonoBehaviour
     [SerializeField] private TextMeshProUGUI scoreText;
     [SerializeField] private TextMeshProUGUI highScoreText;
     
-    private int currentScore;
+    private int currentScore; public int CurrentScore { get => currentScore; }
     private int highScore;
     
     private void Awake()

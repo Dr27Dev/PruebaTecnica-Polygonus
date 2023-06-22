@@ -9,6 +9,7 @@ TagManager:
   - DeactivationZone
   - EnemyBullet
   - PlayerBullet
+  - ScreenBounds
   layers:
   - Default
   - TransparentFX
