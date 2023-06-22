@@ -391,6 +391,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4e91d472845e249478c4ef128a6ca343, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  animator: {fileID: 7842255383254284821}
   movementPattern: 0
   circleRadius: 3
   circleSpeed: 1

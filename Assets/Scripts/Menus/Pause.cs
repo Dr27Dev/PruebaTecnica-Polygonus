@@ -19,7 +19,12 @@ public class Pause : MonoBehaviour
 
     private void Update()
     {
-        if (Time.timeScale > 0) isPaused = false;
+        if (Time.timeScale > 0)
+        {
+            Cursor.lockState = CursorLockMode.Locked;
+            Cursor.visible = false;
+            isPaused = false;
+        }
     }
 
     public void TriggerPause()
@@ -29,17 +34,24 @@ public class Pause : MonoBehaviour
             Time.timeScale = 1;
             pauseMenu.SetActive(false);
             isPaused = false;
+            AudioManager.Instance.PlayClip(AudioManager.Instance.Resume);
+            Cursor.lockState = CursorLockMode.Locked;
+            Cursor.visible = false;
         }
         else if (Time.timeScale > 0)
         {
             Time.timeScale = 0;
             pauseMenu.SetActive(true);
             isPaused = true;
+            AudioManager.Instance.PlayClip(AudioManager.Instance.Pause);
+            Cursor.lockState = CursorLockMode.None;
+            Cursor.visible = true;
         }
     }
 
     public void MainMenu()
     {
+        AudioManager.Instance.PlayClip(AudioManager.Instance.UIButton);
         SceneManager.LoadScene(0);
     }
 }

@@ -18,6 +18,7 @@ public class MainMenu : MonoBehaviour
     public void Play()
     {
         SceneManager.LoadScene(1);
+        AudioManager.Instance.PlayClip(AudioManager.Instance.UIButton);
     }
     
     public void Exit()

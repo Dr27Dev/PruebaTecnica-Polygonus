@@ -19,6 +19,7 @@ public class GameOver : MonoBehaviour
 
     private void SetGameOver()
     {
+        AudioManager.Instance.PlayClip(AudioManager.Instance.GameOver);
         Time.timeScale = 0;
         isGameOver = true;
         gameOverScreen.SetActive(true);
@@ -29,6 +30,7 @@ public class GameOver : MonoBehaviour
         if (isGameOver)
         {
             Time.timeScale = 1;
+            AudioManager.Instance.PlayClip(AudioManager.Instance.UIButton);
             SceneManager.LoadScene(SceneManager.GetActiveScene().name);
             isGameOver = false;
         }

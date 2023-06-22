@@ -21,6 +21,7 @@ public class Enemy : MonoBehaviour
         var deathFX = Instantiate(deathFXprefab);
         deathFX.transform.position = transform.position;
         Destroy(deathFX, 1f);
+        AudioManager.Instance.PlayClip(AudioManager.Instance.EnemyExplosion);
         gameObject.SetActive(false);
     }
 
