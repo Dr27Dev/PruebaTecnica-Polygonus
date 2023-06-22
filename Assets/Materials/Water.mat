@@ -38,7 +38,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _Iridiscent:
-        m_Texture: {fileID: 2800000, guid: 07e3d743fac403b4aaa3acb548d16d93, type: 3}
+        m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - unity_Lightmaps:
@@ -71,12 +71,12 @@ Material:
     - _SecondCausticsSpeed: 0.05
     - _WaterDepth: 8
     m_Colors:
-    - _CausticColor: {r: 5.441018, g: 13.4973135, b: 21.764072, a: 0}
-    - _CausticColor_2: {r: 0.15969346, g: 2.175414, b: 2.6042309, a: 0}
+    - _CausticColor: {r: 9.781695, g: 17.038095, b: 24.3967, a: 0}
+    - _CausticColor_2: {r: 0.16601387, g: 0.71167755, b: 1.2136184, a: 0}
     - _Caustics1MovementSpeed: {r: 0.1, g: 2, b: 0, a: 0}
     - _Caustics2MovementSpeed: {r: -0.5, g: -1, b: 0, a: 0}
     - _DeepWater: {r: 0, g: 0, b: 0, a: 0.4392157}
     - _FoamColor: {r: 1, g: 0, b: 0, a: 1}
     - _MovementSpeed: {r: 0.1, g: 5, b: 0, a: 0}
-    - _ShallowWater: {r: 0.3285422, g: 0.45497397, b: 0.6509434, a: 0.6392157}
+    - _ShallowWater: {r: 0.19250624, g: 0.27200675, b: 0.3962264, a: 0.6392157}
   m_BuildTextureStacks: []
