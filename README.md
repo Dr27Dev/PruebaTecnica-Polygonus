@@ -5,6 +5,8 @@ Build: https://drive.google.com/file/d/1u8PdhumMdnBmmMEHuro4UdZhqLf6niBX/view?us
 
 Desarrollé un minijuego en vista Top-Down, con temática arcade shooter.
 
+Disclaimer: Hay un error en la resolución del juego al abrirlo por primera vez. Al iniciar el juego, es recomendable quitar la pantalla completa, escalar la ventana/maximizarla y volver a activar la pantalla completa para poder ver el juego como se espera.
+
 ----
 ## *Jugador*
 
